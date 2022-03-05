@@ -38,4 +38,17 @@ btn.addEventListener('click', ()=>{
     total = Number(total) + add
     //カウントアップの処理を実行する
     countUp(target, total, increment)
+    //3だったら馬鹿になる
+    if(btn > 0){
+        for(var i = 1; a > i; i++){
+            var ii = String(i);
+            if(i % 3 === 0 || ii.indexOf("3") >= 0){
+                document.write(i + "アホ<br>");
+            } else {
+                document.write(i + "<br>");
+        }
+    }
+    } else {
+        document.write("正の数値にしてください。");
+    }
 })
