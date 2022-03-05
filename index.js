@@ -31,24 +31,25 @@ const add = 1;
 const increment = 1;
 
 //イベントリスナー
-btn.addEventListener('click', ()=>{
-    //テキストコンテンツを取得
-    let total = format(target.textContent)
-    //テキストコンテンツにaddを加算
-    total = Number(total) + add
-    //カウントアップの処理を実行する
-    countUp(target, total, increment)
-    //3だったら馬鹿になる
-    if(btn > 0){
-        for(var i = 1; a > i; i++){
-            var ii = String(i);
-            if(i % 3 === 0 || ii.indexOf("3") >= 0){
-                document.write(i + "アホ<br>");
-            } else {
-                document.write(i + "<br>");
-        }
+btn.addEventListener("click", () => {
+  //テキストコンテンツを取得
+  let total = format(target.textContent);
+  //テキストコンテンツにaddを加算
+  total = Number(total) + add;
+  //カウントアップの処理を実行する
+  //3だったら馬鹿になる
+  if (total > 0) {
+    for (var i = 0; total >= i; i++) {
+      var ii = String(i);
+      if (i % 3 === 0 || ii.indexOf("3") >= 0) {
+        document.querySelector("#osamu").innerHTML = "<p>アホ</p>";
+      } else {
+        document.querySelector("#osamu").innerHTML = i;
+        document.querySelector("#target").innerHTML = i;
+      }
     }
-    } else {
-        document.write("正の数値にしてください。");
-    }
-})
+  } else {
+    document.write("正の数値にしてください。");
+  }
+  countUp(target, total, increment);
+});
