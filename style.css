@@ -1,0 +1,29 @@
+#app {
+  width: 96%;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 28px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 0px rgba(200, 200, 200, 1);
+  text-align: right;
+}
+
+#target {
+  color: #ea4335;
+  font-size: 2rem;
+}
+
+#btn {
+  display: block;
+  width: 150px;
+  padding: 10px;
+  margin: 0 auto;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #ffffff;
+  border: 0;
+  background-color: #00c2bc;
+  cursor: pointer;
+}
