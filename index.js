@@ -42,7 +42,8 @@ btn.addEventListener("click", () => {
     for (var i = 0; total >= i; i++) {
       var ii = String(i);
       if (i % 3 === 0 || ii.indexOf("3") >= 0) {
-        document.querySelector("#osamu").innerHTML = "<p>アホ</p>";
+        document.querySelector("#osamu").innerHTML =
+          '<img src="/Users/daikimiyazaki/Downloads/0QT0oSfD_400x400.jpeg">';
       } else {
         document.querySelector("#osamu").innerHTML = i;
         document.querySelector("#target").innerHTML = i;

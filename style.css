@@ -6,12 +6,13 @@
   border: 1px solid #ffffff;
   border-radius: 5px;
   box-shadow: 2px 2px 5px 0px rgba(200, 200, 200, 1);
-  text-align: right;
+  text-align: center;
 }
 
 #target {
   color: #ea4335;
   font-size: 2rem;
+  text-align: center;
 }
 
 #btn {
@@ -26,4 +27,17 @@
   border: 0;
   background-color: #00c2bc;
   cursor: pointer;
+}
+
+#osamu {
+  margin-left: 40rem;
+  margin-right: 40rem;
+  width: 8em;
+  font-size: 20rem;
+}
+
+p {
+  font-size: 0.8rem;
+  color: #000;
+  text-align: center;
 }
